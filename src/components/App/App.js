@@ -20,7 +20,8 @@ class App extends Component {
       tutorial: tutorial
     }
     console.log(newTrick)
-    postData(newTrick);
+    this.setState({ tricks: [...this.state.tricks, newTrick]})
+    // postData(newTrick);
   }
 
   componentDidMount () {
